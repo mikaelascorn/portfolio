@@ -73,9 +73,12 @@
     }
   }
 }
-@media(max-width: 750px) {
-  form {
-    // display: flex;
-    // flex: 1 0 300px;
+@media (max-width: 768px) {
+  .contact-section {
+    .contact {
+      form {
+        flex: 1 0 300px;
+      }
+    }
   }
 }

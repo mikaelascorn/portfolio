@@ -4,7 +4,10 @@ $(function () {
     console.log('clicked');
     $('ul').toggleClass('active');
   })
-
-  $('a').smoothScroll();
   
+  $('a').smoothScroll({
+    offset: -40,
+    speed: 600
+  });
+
 });
