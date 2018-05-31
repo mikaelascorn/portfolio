@@ -1,0 +1,141 @@
+$fontGrey: #777777;
+$fontBlack: #333333;
+$accent:  #f7f7f7;
+$pink: rgb(219, 205, 197);
+
+@mixin fontSize($scale) {
+	font-size: $scale * 1px;
+	font-size: ($scale / 10) * 1rem;
+}
+html { 
+  font-size: 62.5%;
+}
+body {
+  background: $accent;
+  .skip {
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    height: 1px;
+    width: 1px;
+    text-align: left;
+    overflow: hidden;
+  }
+  a.skip:active, 
+  a.skip:focus, 
+  a.skip:hover {
+      left: 0; 
+      top: 0;
+      width: auto; 
+      height: auto; 
+      overflow: visible; 
+  }
+  .wrapper {
+    width: 80%;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  h1,
+  h2,
+  a {
+    color: $pink;
+  }
+  h1 {
+    @include fontSize(70);
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.4rem;
+    margin: 0px;
+  }
+  .strong {
+    letter-spacing: 1.3rem;
+  }
+  h2 {
+    font-family: 'Merriweather', serif;
+    @include fontSize(20);
+    font-style: italic;
+    letter-spacing: 1.2rem;
+    text-align: left;
+    margin: 0px;
+  }
+  h3 {
+    color: $fontBlack;
+    font-family: 'Montserrat', sans-serif;
+    @include fontSize(30);
+    letter-spacing: 0.1rem;
+    margin: 5px;
+  }
+  h3::before {
+    border-top: 3px double $pink;
+    width: 200px;
+    height: 3px;
+    content: "";
+    display: block;
+    padding-bottom: 10px;
+    position: relative;
+    left: -3%;
+  }
+  h4 {
+    color: $fontBlack;
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    letter-spacing: 0.1rem;
+    @include fontSize(16);
+    margin: 0px;
+    margin-top: 70px;
+  }
+  h5 {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.1rem;
+    @include fontSize(17);
+    margin: 0px;
+    line-height: 1.7;
+  }
+  h6 {
+    font-family: 'Merriweather', serif;
+    @include fontSize(25);
+    text-align: right;
+    margin: 30px 0px 20px 0px;
+  }
+  h6:before {
+    border-top: 3px double $pink;
+    width: 200px;
+    padding-bottom: 5px;
+    height: 3px;
+    content: "";
+    display: block;
+    position: relative;
+    left: 60%;
+  }
+  p,
+  a,
+  .fa {
+    font-family: 'Merriweather', serif;
+    @include fontSize(16);
+    line-height: 2;
+  }
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  main {
+    p,
+    a {
+      color: $fontGrey;
+    }
+  }
+  footer p,
+  footer a {
+    @include fontSize(12);
+    margin: 3px;
+    color: $pink;
+    text-transform: none;
+  }
+}
+
+@media (max-width: 1400px) {
+  body .wrapper {
+    max-width: 85%;
+  }
+}

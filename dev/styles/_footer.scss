@@ -1,0 +1,17 @@
+footer {
+  background-image: url(../assets/hero.jpeg);
+  padding: 40px;
+  p {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.1rem;
+    padding: 5px;
+    svg {
+      height: 25px;
+      width: 25px;
+    }
+  }
+  p a {
+    margin: 0px;
+  }
+}

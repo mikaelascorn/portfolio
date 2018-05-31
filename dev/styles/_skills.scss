@@ -1,0 +1,28 @@
+.skills-color {
+    background-image: linear-gradient(180deg, $accent 50%, rgba(219, 205, 197, 0.6) 50%);
+  i {
+    @include fontSize(40);
+  }
+  ul {
+    margin: 40px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+    li {
+      list-style-type: none;
+      text-align: center;
+      width: 100px;
+    }
+  }
+  .dev-top {
+    padding-top: 30px;
+  }
+  .dev-bottom {
+    padding-bottom: 40px;
+  }
+}
