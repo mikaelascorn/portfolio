@@ -29,3 +29,14 @@
     }
   }
 }
+
+@media(max-width: 768px) {
+  .project {
+    width: 100%;
+    display: block;
+    .project-bio {
+      margin: 0 auto;
+      max-width: 100%;
+    }
+  }
+}

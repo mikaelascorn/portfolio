@@ -96,7 +96,6 @@ a.skip:hover {
       }
     }
     .main-navigation {
-
       .toggle {
         display: block;
         color: $pink;
@@ -107,4 +106,7 @@ a.skip:hover {
   }
 }
 
+@media (max-width: 745px) {
+
+}
 

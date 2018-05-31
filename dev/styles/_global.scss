@@ -41,15 +41,18 @@ body {
     color: $pink;
   }
   h1 {
-    @include fontSize(70);
+    font-family: 'Montserrat', sans-serif;
     text-align: left;
     text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.4rem;
     margin: 0px;
   }
   .strong {
     letter-spacing: 1.3rem;
+     @include fontSize(70);
+  }
+  .last-name {
+    letter-spacing: 0.4rem;
+    @include fontSize(60);
   }
   h2 {
     font-family: 'Merriweather', serif;
@@ -95,18 +98,18 @@ body {
   h6 {
     font-family: 'Merriweather', serif;
     @include fontSize(25);
-    text-align: right;
     margin: 30px 0px 20px 0px;
+    text-align: center;
   }
-  h6:before {
+  .separator:before {
     border-top: 3px double $pink;
     width: 200px;
-    padding-bottom: 5px;
+    padding-bottom: 30px;
     height: 3px;
     content: "";
     display: block;
     position: relative;
-    left: 60%;
+    left: calc(50% - 100px);
   }
   p,
   a,
@@ -134,8 +137,40 @@ body {
   }
 }
 
+    // box-shadow: 3px 0px 22px #888888;
+
 @media (max-width: 1400px) {
   body .wrapper {
     max-width: 85%;
+  }
+}
+
+@media (max-width: 575px) {
+  body {
+    h2 {
+      letter-spacing: 1rem;
+    }
+    .strong {
+      letter-spacing: 1rem;
+      @include fontSize(60);
+    }
+    .last-name {
+      letter-spacing: 0rem;
+      @include fontSize(50);
+    }
+  }
+}
+@media (max-width: 480px) {
+  body {
+    .wrapper {
+      max-width: 100%;
+    }
+    .last-name {
+      @include fontSize(40);
+    }
+    h2 {
+      @include fontSize(17);
+      padding-top: 10px;
+    }
   }
 }
