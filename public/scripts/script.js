@@ -2,10 +2,8 @@
 
 $(function () {
   console.log('hello');
-  $('.toggle').click(function () {
+  $('.menu').click(function () {
     console.log('clicked');
-    
-    $('.toggle').toggleClass('active');
     $('ul').toggleClass('active');
   });
 
@@ -13,5 +11,4 @@ $(function () {
     offset: -40,
     speed: 600
   });
-
 });

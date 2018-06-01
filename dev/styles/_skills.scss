@@ -22,13 +22,13 @@
       &:hover p {
         display: block;
         color: $fontGrey;    
-        transition: all 0.5s;    
+        transition: all 1s;    
       }
       &:hover i,
       &:hover svg {
         fill: white;
         color: white;
-        transform: scale(1.03);
+        transform: scale(1.1);
         transition: all 0.5s;    
       }
       i {
@@ -37,6 +37,7 @@
       p {
         display: none;
         margin: 0px;
+        padding-top: 5px;
       }
     }
   }
