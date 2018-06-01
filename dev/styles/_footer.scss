@@ -1,6 +1,12 @@
 footer {
   background-image: url(../assets/hero.jpeg);
   padding: 40px 0px;
+  .footer-wrap {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
   p {
     display: flex;
     justify-content: center;
@@ -17,8 +23,9 @@ footer {
 }
 @media (max-width: 600px) {
   footer {
-    span::after {
-      content: "\A";
+    .footer-wrap {
+      display: block;
     }
   }
 }
+

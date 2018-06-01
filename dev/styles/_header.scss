@@ -21,7 +21,7 @@ a.skip:hover {
 .header-content {
   background-image: url(../assets/hero.jpeg);
   height: 100vh;
-  background-position: fill;
+  background-size: cover;
   background-repeat: repeat;
   .main-navigation {
     max-width: 90%;
@@ -33,10 +33,7 @@ a.skip:hover {
     .toggle {
       display: none;
       color: $pink;
-    @include fontSize(20);
-    }
-    .header-icons {
-      // position: fixed;
+      @include fontSize(20);
     }
     .header-icons a {
       padding: 20px;
@@ -65,17 +62,16 @@ a.skip:hover {
   .header-title {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 45%;
     transform: translate(-50%, -50%);
     width: 90%;
     svg {
-      width: 350px;
-      height: 350px;
-      overflow: hidden;
+      left: 33px;
+      width: 347px;
+      height: 348px;
       position: fixed;
       z-index: -10;
-      top: 100px;
-      left: 33px;
+      top: 85px;
     }
   }
 }
@@ -91,22 +87,31 @@ a.skip:hover {
         display: block;
         position: absolute;
         right: 50px;
+        z-index: 100;
         text-align: center;
-        background-color: rgba(0,0,0, 0.5);
+        background-color: rgba(0,0,0, 0.9);
+        transition: all 0.5s;
+
       }
     }
     .main-navigation {
       .toggle {
         display: block;
         color: $pink;
-        // position: relative;
-        // z-index: 100;
       }
     }
   }
 }
 
-@media (max-width: 745px) {
-
+@media (max-width: 480px) {
+  .header-content {
+    .header-title {
+      svg {
+        left: 5px;
+        width: 289px;
+        height: 289px;
+      }
+    }
+  }
 }
 

@@ -2,6 +2,7 @@ $fontGrey: #777777;
 $fontBlack: #333333;
 $accent:  #f7f7f7;
 $pink: rgb(219, 205, 197);
+$pop: #60E0B7;
 
 @mixin fontSize($scale) {
 	font-size: $scale * 1px;
@@ -98,13 +99,13 @@ body {
   h6 {
     font-family: 'Merriweather', serif;
     @include fontSize(25);
-    margin: 30px 0px 20px 0px;
-    text-align: center;
+    margin: 60px auto 30px auto;
+    max-width: 80%;
   }
   .separator:before {
     border-top: 3px double $pink;
     width: 200px;
-    padding-bottom: 30px;
+    padding-bottom: 55px;
     height: 3px;
     content: "";
     display: block;
@@ -161,16 +162,35 @@ body {
   }
 }
 @media (max-width: 480px) {
-  body {
-    .wrapper {
-      max-width: 100%;
-    }
+  body .wrapper {
+    max-width: 100%;
     .last-name {
-      @include fontSize(40);
+      @include fontSize(43);
     }
     h2 {
-      @include fontSize(17);
+      @include fontSize(15);
       padding-top: 10px;
+    }
+  }
+}
+  
+@media (max-width: 380px) {
+  body {
+    .strong {
+      letter-spacing: 0.5rem;
+      @include fontSize(55);
+    }
+    .last-name {
+      @include fontSize(36);
+    }
+    h2 {
+      @include fontSize(14);
+      letter-spacing: 0.8rem;
+    }
+    footer p,
+    footer a {
+      @include fontSize(10);
+      margin: 3px;
     }
   }
 }

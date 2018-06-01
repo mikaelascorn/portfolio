@@ -46,6 +46,7 @@
           background-color: $accent;
           margin-bottom: 75px;
           text-transform: uppercase;
+          transition: all 0.5s;
           &::before,
           &::after {
             content: "";
@@ -54,21 +55,38 @@
           }
           &::before {
             border-top: 3px double $pink;
+            transition: all 0.5s;
           }
           &::after {
             border-bottom: 3px double $pink;
+            transition: all 0.5s;
           }
         }
+        button:hover {
+          color: $pop;
+          transform: scale(1.03);
+        }
         .form-submit:hover {
-          background-color: $pink;
+          background-color: $pop;
         }
       }
     }
     .contact-info {
       padding-bottom: 50px;
       flex: 1 1 200px;
+      .social-space {
+        padding-bottom: 15px;
+      }
       a {
         padding-right: 15px;
+        transition: all 0.5s;
+      }
+      a:hover {
+        color: $pop;
+        transition: all 0.5s;
+         i {
+          transform: scale(1.03);
+         }
       }
     }
   }
@@ -78,22 +96,19 @@
     .contact {
       form {
         flex: 1 0 300px;
+        .form-submit button {
+          margin-bottom: 30px;
+        }
       }
-    }
-    .contact-info {
-      padding-top: 30px;
     }
   }
 }
 
-@media (max-width: 745px) {
+@media (max-width: 730px) {
   .contact-section {
-    background-image: linear-gradient(180deg, $accent 50%, rgba(219, 205, 197, 0.6) 50%);
+    background-image: linear-gradient(180deg, $accent 65%, rgba(219, 205, 197, 0.6) 35%);
     .contact {
       display: block;
-      .contact-info {
-        padding-bottom: 115px;
-      }
     }
   }
 }
