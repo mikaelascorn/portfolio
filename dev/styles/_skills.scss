@@ -1,41 +1,55 @@
 .skills-color {
-    // background-image: linear-gradient(180deg, $accent 10%, rgba(219, 205, 197,0.9) 90%);
     background-color: $pink;
     padding-top: 12px;
     position: relative;
     top: -23px;
-    z-index: -1;
-  i {
-    @include fontSize(40);
-  }
-  ul {
-    margin: 40px 0px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0px 0px 25px 0px;
-    svg {
-      width: 40px;
-      height: 40px;
-    }
-    li {
-      list-style-type: none;
-      text-align: center;
-      width: 100px;
+    ul {
+      margin: 20px 0px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0px 0px 25px 0px;
+      svg {
+        width: 40px;
+        height: 40px;
+      }
+      li {
+        list-style-type: none;
+        text-align: center;
+        width: 100px;
+        transition: all 0.5s;
+        height: 60px;
+      &:hover p {
+        display: block;
+        color: $fontGrey;    
+        transition: all 0.5s;    
+      }
+      &:hover i,
+      &:hover svg {
+        fill: white;
+        color: white;
+        transform: scale(1.03);
+        transition: all 0.5s;    
+      }
+      i {
+        @include fontSize(40);
+      }
       p {
         display: none;
-        padding: 0px;
-      }
-      i:hover p {
-        display: block;
-        // color: $pop;
+        margin: 0px;
       }
     }
   }
   .dev-top {
-    padding-top: 30px;
+    padding-top: 40px;
   }
   .dev-bottom {
     padding-bottom: 80px;
+  }
+}
+
+@media(max-width: 480px) {
+  .skills-color ul li:hover p {
+    display: none;
   }
 }

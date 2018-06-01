@@ -25,11 +25,11 @@ body {
   a.skip:active, 
   a.skip:focus, 
   a.skip:hover {
-      left: 0; 
-      top: 0;
-      width: auto; 
-      height: auto; 
-      overflow: visible; 
+    left: 0; 
+    top: 0;
+    width: auto; 
+    height: auto; 
+    overflow: visible; 
   }
   .wrapper {
     width: 80%;
@@ -138,11 +138,11 @@ body {
   }
 }
 
-    // box-shadow: 3px 0px 22px #888888;
-
 @media (max-width: 1400px) {
   body .wrapper {
     max-width: 85%;
+    position: relative;
+    z-index: 10;
   }
 }
 
@@ -189,7 +189,7 @@ body {
     }
     footer p,
     footer a {
-      @include fontSize(10);
+      @include fontSize(9);
       margin: 3px;
     }
   }

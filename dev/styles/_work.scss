@@ -24,8 +24,10 @@
       text-align: center;
       padding: 5px;
       display: flex;
-      transition: all 0.5s;
       justify-content: center;
+      .hover {
+        transition: all 0.5s;
+      }
       a {
         margin: 10px;
         transition: all 0.5s;
@@ -71,9 +73,7 @@
       .project-links {
         padding: 0px;
         a {
-          // padding-right: 0px;
           margin-left: 0px;
-          // margin: auto;
         }
         .space {
           margin-bottom: 25px;
@@ -87,9 +87,7 @@
     .project-bio {
       .project-links {
         display: block;
-        .live-space {
-          // padding-bottom: 20px;
-        }
+
       }
     }
   }

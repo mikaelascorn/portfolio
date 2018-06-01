@@ -23,14 +23,14 @@
         max-width: 400px;
         &::placeholder {
           color: $fontGrey;
-          @include fontSize(8);
+          @include fontSize(12);
         }
       }
       textarea {
         max-width: 100%;
         &::placeholder {
           color: $fontGrey;
-          @include fontSize(8);
+          @include fontSize(12);
         }
       }
       textarea:hover,
@@ -106,9 +106,30 @@
 
 @media (max-width: 730px) {
   .contact-section {
-    background-image: linear-gradient(180deg, $accent 65%, rgba(219, 205, 197, 0.6) 35%);
+    background-image: linear-gradient(180deg, $accent 60%, rgba(219, 205, 197, 0.6) 40%);
     .contact {
       display: block;
     }
+  }
+}
+
+@media (max-width: 550px) {
+  .contact-section {
+    .contact {
+      form {
+        textarea,
+        input {
+          border: 3px solid $pink;
+          border-bottom: 1px solid $fontGrey;
+          background-color: darken($accent, 5%);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .contact-section {
+    background-image: linear-gradient(180deg, $accent 65%, rgba(219, 205, 197, 0.6) 35%);
   }
 }

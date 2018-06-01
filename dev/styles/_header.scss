@@ -79,32 +79,83 @@ a.skip:hover {
 @media (max-width: 1024px) {
   .header-content {
     .main-links {
-      
       .hamburger {
         display: none;
       }
       .active {
         display: block;
         position: absolute;
-        right: 50px;
+        right: 20px;
+        top: 70px;
         z-index: 100;
         text-align: center;
         background-color: rgba(0,0,0, 0.9);
-        transition: all 0.5s;
-
+        transition: all 5ms ease-in-out;
       }
     }
     .main-navigation {
       .toggle {
         display: block;
         color: $pink;
+        position: absolute;
+        top: 6%;
+        right: 3%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 16px;
+        cursor: pointer;
+      }
+      .toggle.active {
+        right: 5.6%;
+      }
+      .menu {
+        width: 40px;
+        height: 4px;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        background: $pink;
+        transform: translate(-50%, -50%);
+        box-shadow: 0px 2px 5px rgba(219, 205, 197, 0.3);
+      }
+      .menu:after,
+      .menu:before {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 4px;
+        background: $pink;
+        box-shadow: 0px 2px 5px rgba(219, 205, 197, 0.3);
+        transition: 0.3s;
+      }
+      .menu:before {
+        top: -16px;
+      }
+      .menu:after {
+        top: 16px;
+      }
+      .toggle.active .menu {
+        background: black;
+      } 
+      .toggle.active .menu:before {
+        transform: rotate(45deg);
+        top: 0;
+      }
+      .toggle.active .menu:after {
+        transform: rotate(135deg);
+        top: 0;
       }
     }
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .header-content {
+    .main-navigation {
+      .toggle.active {
+          right: 6.6%;
+        }
+      }
     .header-title {
       svg {
         left: 5px;
