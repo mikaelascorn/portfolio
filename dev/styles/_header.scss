@@ -92,7 +92,7 @@ a.skip:hover {
         z-index: 100;
         text-align: center;
         background-color: rgba(0,0,0, 0.9);
-        transition: all 4ms ease-in-out;
+        transition: all 3ms ease-in-out;
       }
     }
     .main-navigation {
@@ -122,7 +122,7 @@ a.skip:hover {
         background: $pink;
         transform: translate(-50%, -50%);
         box-shadow: 0px 2px 5px rgba(219, 205, 197, 0.3);
-        transition: 0.3s;
+        transition: 0.2s;
       }
       .menu:after,
       .menu:before {
@@ -132,7 +132,7 @@ a.skip:hover {
         height: 4px;
         background: $pink;
         box-shadow: 0px 2px 5px rgba(219, 205, 197, 0.3);
-        transition: 0.3s;
+        transition: 0.2s;
       }
       .menu:before {
         top: -16px;
@@ -160,6 +160,10 @@ a.skip:hover {
     .main-navigation {
       .toggle.active {
           right: 6.6%;
+        }
+        .toggle {
+          top: 9%;
+          right: 0%;
         }
       }
     .header-title {

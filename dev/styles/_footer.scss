@@ -1,11 +1,17 @@
 footer {
   background-color: black;
   padding: 40px 0px;
-  .footer-wrap {
+  .wrapper {
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
+  }
+  .footer-wrap {
+    display: flex;
+  }
+  span {
+    padding-left: 20px;
   }
   p {
     display: flex;
@@ -21,8 +27,25 @@ footer {
     margin: 0px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   footer {
+    .wrapper {
+      display: block;
+      margin: 0 auto;
+    }
+    .footer-line {
+      display: none;
+    }
+    .footer-wrap {
+      justify-content: center;
+    }
+  }
+}
+@media (max-width: 660px) {
+  footer {
+    span {
+      display: none;
+    }
     .footer-wrap {
       display: block;
     }
