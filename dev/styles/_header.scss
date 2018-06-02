@@ -76,6 +76,8 @@ a.skip:hover {
   }
 }
 
+
+
 @media (max-width: 1024px) {
   .header-content {
     .main-links {
@@ -90,10 +92,13 @@ a.skip:hover {
         z-index: 100;
         text-align: center;
         background-color: rgba(0,0,0, 0.9);
-        transition: all 5ms ease-in-out;
+        transition: all 4ms ease-in-out;
       }
     }
     .main-navigation {
+      li {
+        padding: 30px 60px;
+      }
       .toggle {
         display: block;
         color: $pink;
@@ -101,8 +106,8 @@ a.skip:hover {
         top: 6%;
         right: 3%;
         transform: translate(-50%, -50%);
-        width: 20px;
-        height: 16px;
+        width: 40px;
+        height: 20px;
         cursor: pointer;
       }
       .toggle.active {
@@ -117,6 +122,7 @@ a.skip:hover {
         background: $pink;
         transform: translate(-50%, -50%);
         box-shadow: 0px 2px 5px rgba(219, 205, 197, 0.3);
+        transition: 0.3s;
       }
       .menu:after,
       .menu:before {

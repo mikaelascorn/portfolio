@@ -283,7 +283,7 @@ body {
       font-size: 1.5rem;
       padding-top: 10px; } }
 
-@media (max-width: 380px) {
+@media (max-width: 430px) {
   body .strong {
     letter-spacing: 0.5rem;
     font-size: 55px;
@@ -389,8 +389,10 @@ a.skip:hover {
     z-index: 100;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.9);
-    -webkit-transition: all 5ms ease-in-out;
-    transition: all 5ms ease-in-out; }
+    -webkit-transition: all 4ms ease-in-out;
+    transition: all 4ms ease-in-out; }
+  .header-content .main-navigation li {
+    padding: 30px 60px; }
   .header-content .main-navigation .toggle {
     display: block;
     color: #dbcdc5;
@@ -399,8 +401,8 @@ a.skip:hover {
     right: 3%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    width: 20px;
-    height: 16px;
+    width: 40px;
+    height: 20px;
     cursor: pointer; }
   .header-content .main-navigation .toggle.active {
     right: 5.6%; }
@@ -414,7 +416,9 @@ a.skip:hover {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     -webkit-box-shadow: 0px 2px 5px rgba(219, 205, 197, 0.3);
-            box-shadow: 0px 2px 5px rgba(219, 205, 197, 0.3); }
+            box-shadow: 0px 2px 5px rgba(219, 205, 197, 0.3);
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
   .header-content .main-navigation .menu:after,
   .header-content .main-navigation .menu:before {
     content: '';
@@ -623,8 +627,13 @@ a.skip:hover {
   .about-section .about-photo img {
     max-width: 100%; } }
 
+@media (max-width: 550px) {
+  .wrapper .about-section {
+    max-width: 100%;
+    display: block; } }
+
 footer {
-  background-image: url(../assets/hero.jpeg);
+  background-color: black;
   padding: 40px 0px; }
   footer .footer-wrap {
     display: -webkit-box;
