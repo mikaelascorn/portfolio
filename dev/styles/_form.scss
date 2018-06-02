@@ -41,6 +41,9 @@
       }
       .form-submit {
         display: block;
+        .thanks {
+          display: none;
+        }
         button {
           border: 1px solid transparent;
           background-color: $accent;
@@ -74,6 +77,9 @@
     .contact-info {
       padding-bottom: 50px;
       flex: 1 1 200px;
+      p a {
+        text-transform: none;
+      }
       .social-space {
         padding-bottom: 15px;
       }
@@ -89,6 +95,9 @@
          }
       }
     }
+  }
+  .back-to-top {
+    text-align: center;
   }
 }
 @media (max-width: 880px) {
@@ -106,11 +115,14 @@
 
 @media (max-width: 730px) {
   .contact-section {
-    background-image: linear-gradient(180deg, $accent 57%, rgba(219, 205, 197, 0.6) 43%);
+    background-image: linear-gradient(180deg, $accent 60%, rgba(219, 205, 197, 0.6) 50%);
     .contact {
       display: block;
+      .contact-info {
+        padding-bottom: 5px;
+      }
     }
-  }
+  }  
 }
 
 @media (max-width: 550px) {

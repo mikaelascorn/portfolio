@@ -87,7 +87,7 @@ body {
     letter-spacing: 0.1rem;
     @include fontSize(16);
     margin: 0px;
-    margin-top: 70px;
+    margin-top: 90px;
   }
   h5 {
     font-family: 'Montserrat', sans-serif;
@@ -145,18 +145,12 @@ body {
     z-index: 10;
   }
 }
-@media (max-width: 550px) {
-  body h6 {
-    max-width: 100%;
-    text-align: left;
-    margin-bottom: px;
-  }
-}
 
 @media (max-width: 575px) {
   body {
     h2 {
       letter-spacing: 1rem;
+      padding-top: 10px;
     }
     .strong {
       letter-spacing: 1rem;
@@ -166,6 +160,18 @@ body {
       letter-spacing: 0rem;
       @include fontSize(50);
     }
+    h4 {
+      margin-top: 55px;
+    }
+    h6 {
+      max-width: 100%;
+      text-align: left;
+      margin-top: 40px;
+      margin-bottom: 0px;
+    }
+     .separator:before {
+       padding-bottom: 30px;
+     }
   }
 }
 @media (max-width: 480px) {

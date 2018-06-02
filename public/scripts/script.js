@@ -1,21 +1,27 @@
 'use strict';
 
 $(function () {
-  console.log('hello');
 
   $('.toggle').click(function () {
-    console.log('clicked');
+
     $('.toggle').toggleClass('active');
     $('ul').toggleClass('active');
 
-    var ul = $('ul');
-    if (ul.hasClass('active')) {
-      ul.fadeIn('ul');
-      // .addClass('fa-times');
-    } else {
-      ul.fadeOut('ul');
-      // .addClass('fa-bars');
-    }
+    // if ('active' === true ) {
+    //   console.log('true');
+    //   $('.toggle').toggleClass('active');
+    //   $('ul').fadeOut('active');    
+    //   // $('ul').fadeOut('active')
+    // } else {
+    //   console.log('fallse');
+    //   $('.toggle').toggleClass('active');
+    //   $('ul').fadeIn('active');
+    // }
+  });
+
+  $('form').on('submit', function () {
+    $('.submit').hide();
+    $('.thanks').show();
   });
 
   $('a').smoothScroll({

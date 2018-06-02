@@ -4,18 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Mikaela Front End Developer</title>  
+  <title>Mikaela Front End Developer</title> 
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="public/styles/style.css">
+  <!-- CSS Animate -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <!-- font awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"crossorigin="anonymous">
   <!-- devicon -->
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <!-- jquery -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js'></script>
   <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=' crossorigin='anonymous'></script>
   <!-- google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i|Montserrat" rel="stylesheet">
-  <!-- CSS animations -->
-  <link rel="stylesheet" href="animate.min.css">
   <!-- Fauvicon -->
   <link rel="apple-touch-icon" sizes="57x57" href="fauvicon.ico/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="fauvicon.ico/apple-icon-60x60.png">
@@ -34,8 +34,6 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="fauvicon.ico/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <!-- stylesheet -->
-  <link rel="stylesheet" href="public/styles/style.css">
 </head>
 <body>
   <a href="#content" class="skip">Skip to main content</a>  
@@ -51,7 +49,7 @@
           <div class="menu"></div>
         </div>
         <ul class="hamburger">
-          <li><a href="#home">Home</a></li>
+          <li><a href="#" id="home">Home</a></li>
           <li><a href="#about">About Me</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#work">Work</a></li>
@@ -104,7 +102,7 @@
   <main id="content">
     <!-- START ABOUT ME SECTION -->
     <section class="wrapper" id="about">
-      <h4 class="animated bounce"><em>Hi, and Welcome!</em></h4>
+      <h4><em class="animated bounce">Hi, and Welcome!</em></h4>
       <h3>About Me!</h3>
       <div class="about-section">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim dicta inventore beatae, eaque unde quibusdam soluta. Sed explicabo doloremque enim sapiente cumque impedit perspiciatis id cupiditate ad, odit maxime a?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, iure sed. Eligendi nemo, neque dignissimos velit itaque a quam perspiciatis eveniet error, quidem corrupti et officiis! Quae aliqum molestiae quisquam?</p>
@@ -115,8 +113,8 @@
     </section>
     <!-- END ABOUT ME SECTION -->
     <!-- START SKILLS SECTION -->
-    <div id="skills" class="wrapper">
-      <h4 animated"fadeIn" >With a little help from coffee.</h4>
+    <div id="skills" class="wrapper skills-position">
+      <h4>With a little help from coffee.</h4>
       <H3>Tools and Skills</H3>
     </div>
     <section class="skills-color">
@@ -192,46 +190,67 @@
     <section id="work" class="wrapper">
       <h4>Latest Works!</h4>
       <h3>Things I've Made</h3>
-      <div class="project-wrapper">
-        <h6>Wine & Beer</h6>
+        <div class="project-wrapper">
+        <h6>Never Calc Down</h6>
           <div class="project">
-          <div class="project-bio">
-            <h5>HTML5 | CSS3 | SASS | JavaScript | API | jQuery | Mobile First | Pair Programming</h5>
-            <p>Need a drink, but can't decide? An interactive app built using the LCBO API. The app filters a drink based on the users budget and drink choice and then filters by what is in stock at the closest location. Made with Zena Jun.</p>
-            <div class="project-links">
-              <div class="hover space">
-                <a href="">View Live</a>
+            <div class="project-bio">
+              <h5>JSX | CSS3 | SASS | React | Firebase | Mobile First</h5>
+              <p>A calculator built mobile first using React and Firebase. As the user enters equations, the equation and results are saved in Firebase, and they can be deleted by the user. Why would you ever use your iPhone calculator when you have this?</p>
+              <div class="project-links">
+                <div class="hover space">
+                  <a href="">View Live</a>
+                </div>
+                <div class="hover">
+                  <a href="">GitHub Link</a>
+                </div>
               </div>
-              <div class="hover">
-                <a href="">GitHub Link</a>
+            </div>
+            <div class="project-bio project-img">
+              <img src=" https://media.giphy.com/media/p3OW8vib9jeLQI8vZV/giphy.gif" alt="A Giphy demo of my calculator React project">
+            </div>
+          </div>
+          <div class="project-wrapper">
+            <h6 class="separator">Wine & Beer</h6>
+              <div class="project">
+              <div class="project-bio">
+                <h5>HTML5 | CSS3 | SASS | JavaScript | API | jQuery | Mobile First | Pair Programming</h5>
+                <p>Need a drink, but can't decide? An interactive app built using the LCBO API. The app filters a drink based on the users budget and drink choice and then filters by what is in stock at the closest location. Made with Zena Jun.</p>
+                <div class="project-links">
+                  <div class="hover space">
+                    <a href="">View Live</a>
+                  </div>
+                  <div class="hover">
+                    <a href="">GitHub Link</a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-bio project-img">
+                <img src="  https://media.giphy.com/media/3MgIC7tMXtUcPQGjvr/giphy.gif" alt="A Giphy demo of my Wine & Beer API project">
               </div>
             </div>
           </div>
-          <div class="project-bio project-img">
-            <img src="  https://media.giphy.com/media/3MgIC7tMXtUcPQGjvr/giphy.gif" alt="A Giphy demo of my Wine & Beer API project">
-          </div>
         </div>
-      </div>
-      <div class="project-wrapper">
-        <h6 class="separator">Never Calc Down</h6>
-        <div class="project">
-          <div class="project-bio">
-            <h5>JSX | CSS3 | SASS | React | Firebase | Mobile First</h5>
-            <p>A calculator built mobile first using React and Firebase. As the user enters equations, the equation and results are saved in Firebase, and they can be deleted by the user. Why would you ever use your iPhone calculator when you have this?</p>
-            <div class="project-links">
-              <div class="hover space">
-                <a href="">View Live</a>
-              </div>
-              <div class="hover">
-                <a href="">GitHub Link</a>
+        <div class="project-wrapper">
+          <h6 class="separator">Lisbon</h6>
+          <div class="project">
+            <div class="project-bio">
+              <h5>HTML5 | CSS3 | SASS | jQuery </h5>
+              <p>A fully responsive single page website converted from a PSD. Utilizing media and queries, SASS and a bit of jQuery (hello smooth scroll 😍).</p>
+              <div class="project-links">
+                <div class="hover space">
+                  <a href="">View Live</a>
+                </div>
+                <div class="hover">
+                  <a href="">GitHub Link</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="project-bio project-img">
-            <img src=" https://media.giphy.com/media/p3OW8vib9jeLQI8vZV/giphy.gif" alt="A Giphy demo of my calculator React project">
+            <div class="project-bio project-img">
+              <img src=" https://media.giphy.com/media/paW9Q21Jt8mJMuRdWj/giphy.gif" alt="A Giphy demo of my PSD conversion project">
+            </div>
           </div>
         </div>
-      </div>
+        </div>
     </section>
     <!-- END WORK SECTION -->
     <!-- START CONTACT ME -->
@@ -262,11 +281,12 @@
   
             <div class="form-submit">
               <button type="submit">Send Message</button>
+              <p class="thanks">Thank you for you message!</p>
             </div>
           </form>
           <div class="contact-info">
             <h5>Email</h5>
-            <p>hello@mikaelamade.com</p>
+            <p><a href="mailto:hello@mikaelamade.com">hello@mikaelamade.com</a></p>
             <h5>Location</h5>
             <p>Toronto, Ontario</p>
             <h5 class="social-space">Social Media</h5>
@@ -274,6 +294,9 @@
             <a href="https://twitter.com/MikaelaScorn" target="__blank"><i class="fab fa-twitter"></i></a>
             <a href="https://www.linkedin.com/in/mikaelascornaienchi/" target="__blank"><i class="fab fa-linkedin-in"></i></a>
           </div>
+        </div>
+        <div class="back-to-top">
+          <a href="#home"><i class="fas fa-angle-up"></i></a>
         </div>
       </div>
     </section>
