@@ -59,6 +59,7 @@ a.skip:hover {
       border-top: 3px double $pink;
     }
   }
+  
   .header-title {
     position: absolute;
     left: 50%;
@@ -75,8 +76,6 @@ a.skip:hover {
     }
   }
 }
-
-
 
 @media (max-width: 1024px) {
   .header-content {
@@ -142,6 +141,7 @@ a.skip:hover {
       }
       .toggle.active .menu {
         background: black;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0);
       } 
       .toggle.active .menu:before {
         transform: rotate(45deg);
