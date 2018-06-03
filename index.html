@@ -7,10 +7,10 @@
   <title>Mikaela Front End Developer</title> 
   <!-- stylesheet -->
   <link rel="stylesheet" href="public/styles/style.css">
-  <!-- CSS Animate -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <!-- font awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"crossorigin="anonymous">
+  <!-- AOS Import -->
+  <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
   <!-- devicon -->
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=' crossorigin='anonymous'></script>
@@ -45,9 +45,9 @@
         <a href="https://www.linkedin.com/in/mikaelascornaienchi/" target="__blank"><i class="fab fa-linkedin-in"></i></a>
       </div>
      <nav class="main-links">
-        <div class="toggle">
-          <div class="menu"></div>
-        </div>
+        <span class="toggle">
+          <span class="menu"></span>
+        </span>
         <ul class="hamburger">
           <li><a href="#" id="home">Home</a></li>
           <li><a href="#about">About Me</a></li>
@@ -102,7 +102,7 @@
   <main id="content">
     <!-- START ABOUT ME SECTION -->
     <section class="wrapper" id="about">
-      <h4><em class="animated bounce">Hi, and Welcome!</em></h4>
+      <h4><em data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1500">Hi, and Welcome!</em></h4>
       <h3>About Me!</h3>
       <div class="about-section">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim dicta inventore beatae, eaque unde quibusdam soluta. Sed explicabo doloremque enim sapiente cumque impedit perspiciatis id cupiditate ad, odit maxime a?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, iure sed. Eligendi nemo, neque dignissimos velit itaque a quam perspiciatis eveniet error, quidem corrupti et officiis! Quae aliqum molestiae quisquam?</p>
@@ -114,7 +114,7 @@
     <!-- END ABOUT ME SECTION -->
     <!-- START SKILLS SECTION -->
     <div id="skills" class="wrapper skills-position">
-      <h4>With a little help from coffee.</h4>
+      <h4 data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1500">With a little help from coffee.</h4>
       <H3>Tools and Skills</H3>
     </div>
     <section class="skills-color">
@@ -188,54 +188,96 @@
     <!-- END SKILLS SECTION -->
     <!-- START WORK SECTION -->
     <section id="work" class="wrapper">
-      <h4>Latest Works!</h4>
+      <h4 data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1500">Latest Works!</h4>
       <h3>Things I've Made</h3>
         <div class="project-wrapper">
         <h6>Never Calc Down</h6>
           <div class="project">
             <div class="project-bio">
-              <h5>JSX | CSS3 | SASS | React | Firebase | Mobile First</h5>
+              <h5>JSX | CSS3 | SASS | React | Firebase | Mobile First | Gulp</h5>
               <p>A calculator built mobile first using React and Firebase. As the user enters equations, the equation and results are saved in Firebase, and they can be deleted by the user. Why would you ever use your iPhone calculator when you have this?</p>
               <div class="project-links">
                 <div class="hover space">
                   <a href="">View Live</a>
                 </div>
                 <div class="hover">
-                  <a href="">GitHub Link</a>
+                  <a href="https://github.com/mikaelascorn/Calculator">GitHub Link</a>
                 </div>
               </div>
             </div>
             <div class="project-bio project-img">
-              <img src=" https://media.giphy.com/media/p3OW8vib9jeLQI8vZV/giphy.gif" alt="A Giphy demo of my calculator React project">
+              <img src=" https://media.giphy.com/media/jWlXO8u9fjZT63OytL/giphy.gif" alt="A Giphy demo of my calculator React project">
             </div>
           </div>
           <div class="project-wrapper">
-            <h6 class="separator">Wine & Beer</h6>
-              <div class="project">
+            <h6 class="separator">I ❤️ Concerts</h6>
+            <div class="project">
               <div class="project-bio">
-                <h5>HTML5 | CSS3 | SASS | JavaScript | API | jQuery | Mobile First | Pair Programming</h5>
-                <p>Need a drink, but can't decide? An interactive app built using the LCBO API. The app filters a drink based on the users budget and drink choice and then filters by what is in stock at the closest location. Made with Zena Jun.</p>
+                <h5>HTML5 | CSS3 | SASS | API | React | Firebase | Gulp | Mobile First | Team Programming</h5>
+                <p>Love concerts, so do we! This application allows users to search a list of artists they want to see in concert, and journal previous concerts they have attended. Using Google Auth the journal items are available to only the user. This agency group project utilizes react-router and is styled in floats!</p>
                 <div class="project-links">
                   <div class="hover space">
                     <a href="">View Live</a>
                   </div>
                   <div class="hover">
-                    <a href="">GitHub Link</a>
+                    <a href="https://github.com/mikaelascorn/iheartconcerts">GitHub Link</a>
                   </div>
                 </div>
               </div>
               <div class="project-bio project-img">
-                <img src="  https://media.giphy.com/media/3MgIC7tMXtUcPQGjvr/giphy.gif" alt="A Giphy demo of my Wine & Beer API project">
+                <img src="#" alt="A Giphy demo of my I ❤️ Concert project">
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="project-wrapper">
+            <h6 class="separator">Wine & Beer</h6>
+              <div class="project">
+              <div class="project-bio">
+                <h5>HTML5 | CSS3 | SASS | JavaScript | API | jQuery | Mobile First | Pair Programming | Gulp</h5>
+                <p>Need a drink, but can't decide? I'm here to help with this interactive app built using the LCBO API. The app recommends a few drink options based on the users budget and drink choice and then filters by what is in stock at the closest location.</p>
+                <div class="project-links">
+                  <div class="hover space">
+                    <a href="">View Live</a>
+                  </div>
+                  <div class="hover">
+                    <a href="https://github.com/mikaelascorn/MikZena">GitHub Link</a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-bio project-img">
+                <img src="  https://media.giphy.com/media/2xPM5vspGtgu08BMAm/giphy.gif" alt="A Giphy demo of my Wine & Beer API project">
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="project-wrapper">
+            <h6 class="separator">Find Your Summertime Anthem</h6>
+            <div class="project">
+              <div class="project-bio">
+                <h5>HTML5 | CSS3 | SASS | jQuery</h5>
+                <p>Summer is just around the corner, what a great time for you to find the perfect tune. This buzzfeed style quiz is built using jQuery and takes the user on a journey of questions until they land on their perfect summer tune.</p>
+                <div class="project-links">
+                  <div class="hover space">
+                    <a href="">View Live</a>
+                  </div>
+                  <div class="hover">
+                    <a href="https://github.com/mikaelascorn/findYourSummertimeAnthem">GitHub Link</a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-bio project-img">
+                <img src="#" alt="A Giphy demo of my Find Your Summertime Anthem project">
               </div>
             </div>
           </div>
         </div>
         <div class="project-wrapper">
-          <h6 class="separator">Lisbon</h6>
+          <h6 class="separator">Pixel Perfect!</h6>
           <div class="project">
             <div class="project-bio">
               <h5>HTML5 | CSS3 | SASS | jQuery </h5>
-              <p>A fully responsive single page website converted from a PSD. Utilizing media and queries, SASS and a bit of jQuery (hello smooth scroll 😍).</p>
+              <p>A fully responsive single page website converted from a PSD. Utilizing media queries, SASS and a bit of jQuery (hello smooth scroll 😍).</p>
               <div class="project-links">
                 <div class="hover space">
                   <a href="">View Live</a>
@@ -256,7 +298,7 @@
     <!-- START CONTACT ME -->
     <section id="contact" class="contact-section">
       <div class="wrapper">
-        <h4>Say Hello!</h4>
+        <h4 data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1500">Say Hello!</h4>
         <h3>Send Me A Message</h3>
         <div class="contact">
           <form method="POST" action="http://www.focuspocus.io/magic/hello@mikaelamade.com">
@@ -338,9 +380,12 @@
         </svg> 2018 <span>|</span></p>
         <p>Designed by Unicode © <span class="footer-line">|</span></p>
       </div>
-      <div class="footer-wrap"><p>Headshot Courtesy of <a href="https://pamlau.com/" target="__blank">Pam Lau</a></p></div>
+      <div class="footer-wrap"><p>Headshot Courtesy of <a href="https://pamlau.com/" target="__blank"> Pam Lau</a></p></div>
     </div>
   </footer>
+
+  <!-- Import AOS -->
+  <script src="node_modules/aos/dist/aos.js"></script>
 
   <!-- External JS, SmoothScrool and Jquery load -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>

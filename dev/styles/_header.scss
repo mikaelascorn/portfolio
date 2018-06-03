@@ -23,6 +23,7 @@ a.skip:hover {
   height: 100vh;
   background-size: cover;
   background-repeat: repeat;
+  background-attachment: fixed;
   .main-navigation {
     max-width: 90%;
     margin: 0 auto;
@@ -66,6 +67,7 @@ a.skip:hover {
     top: 45%;
     transform: translate(-50%, -50%);
     width: 90%;
+    background-attachment: fixed;
     svg {
       left: 33px;
       width: 347px;
@@ -90,13 +92,13 @@ a.skip:hover {
         top: 70px;
         z-index: 100;
         text-align: center;
-        background-color: rgba(0,0,0, 0.9);
+        background-color: rgba(0,0,0, 0.8);
         transition: all 3ms ease-in-out;
       }
     }
     .main-navigation {
       li {
-        padding: 30px 60px;
+        padding: 44px 100px;
       }
       .toggle {
         display: block;
@@ -158,6 +160,13 @@ a.skip:hover {
 @media (max-width: 500px) {
   .header-content {
     .main-navigation {
+      li {
+        padding: 35px 100px;
+        a {
+          padding: 5px 10px;
+          // margin: 20px;
+        }
+      }
       .toggle.active {
           right: 6.6%;
         }
@@ -171,6 +180,15 @@ a.skip:hover {
         left: 5px;
         width: 289px;
         height: 289px;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .header-content {
+    .main-navigation {
+      li {
+        padding: 28px 80px;
       }
     }
   }

@@ -26,6 +26,9 @@ footer {
   p a {
     margin: 0px;
   }
+  p a:hover {
+    color: $pop;
+  }
 }
 @media (max-width: 1000px) {
   footer {
