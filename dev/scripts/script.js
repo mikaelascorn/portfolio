@@ -2,15 +2,9 @@ $(function () {
 
   $('.toggle').click( () => {
     
-    // $('.toggle').toggleClass('active');
+    $('.toggle').toggleClass('active');
 
-    $('ul').toggleClass('active', () => {
-      if ($(this).is(':hidden')) {
-        $(this).slideDown('fast');
-      } else {
-        $(this).fadeOut('fast');
-      };
-    })
+    $('.hamburger').toggleClass('active')
   })
 
 

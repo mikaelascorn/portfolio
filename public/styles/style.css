@@ -396,7 +396,13 @@ a.skip:hover {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.8);
     -webkit-transition: all 3ms ease-in-out;
-    transition: all 3ms ease-in-out; }
+    transition: all 3ms ease-in-out;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .5s;
+            transition-duration: .5s;
+    -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+            transition-timing-function: cubic-bezier(0, 1, 0.5, 1); }
   .header-content .main-navigation li {
     padding: 44px 100px; }
   .header-content .main-navigation .toggle {
@@ -470,7 +476,7 @@ a.skip:hover {
 
 @media (max-width: 500px) {
   .header-content .main-navigation li {
-    padding: 28px 80px; } }
+    padding: 40px 80px; } }
 
 .contact-section {
   text-align: left;
@@ -625,9 +631,9 @@ a.skip:hover {
         -ms-flex: 1 0 300px;
             flex: 1 0 300px; }
     .contact-section .contact form .form-submit button {
-      margin-bottom: 30px; } }
+      margin-bottom: 56px; } }
 
-@media (max-width: 730px) {
+@media (max-width: 780px) {
   .contact-section {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #f7f7f7), color-stop(50%, rgba(219, 205, 197, 0.6)));
     background-image: linear-gradient(180deg, #f7f7f7 60%, rgba(219, 205, 197, 0.6) 50%); }
@@ -649,9 +655,6 @@ a.skip:hover {
     background-image: linear-gradient(180deg, #f7f7f7 65%, rgba(219, 205, 197, 0.6) 35%); } }
 
 .about-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   max-width: 80%;
   margin: 0 auto;
   -ms-flex-wrap: row wrap;
@@ -794,7 +797,13 @@ footer {
 
 @media (max-width: 480px) {
   .skills-color ul li:hover p {
-    display: none; } }
+    display: none; }
+  .skills-color ul li:hover i,
+  .skills-color ul li:hover svg {
+    fill: black;
+    color: black;
+    -webkit-transform: none;
+            transform: none; } }
 
 .project {
   display: -webkit-box;

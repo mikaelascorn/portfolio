@@ -94,6 +94,9 @@ a.skip:hover {
         text-align: center;
         background-color: rgba(0,0,0, 0.8);
         transition: all 3ms ease-in-out;
+        transition-property: all;
+        transition-duration: .5s;
+        transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
       }
     }
     .main-navigation {
@@ -188,7 +191,7 @@ a.skip:hover {
   .header-content {
     .main-navigation {
       li {
-        padding: 28px 80px;
+        padding: 40px 80px;
       }
     }
   }

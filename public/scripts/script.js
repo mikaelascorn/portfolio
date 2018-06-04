@@ -1,19 +1,12 @@
 'use strict';
 
 $(function () {
-  var _this = this;
 
   $('.toggle').click(function () {
 
-    // $('.toggle').toggleClass('active');
+    $('.toggle').toggleClass('active');
 
-    $('ul').toggleClass('active', function () {
-      if ($(_this).is(':hidden')) {
-        $(_this).slideDown('fast');
-      } else {
-        $(_this).fadeOut('fast');
-      };
-    });
+    $('.hamburger').toggleClass('active');
   });
 
   $('form').on('submit', function () {

@@ -125,14 +125,14 @@
       form {
         flex: 1 0 300px;
         .form-submit button {
-          margin-bottom: 30px;
+          margin-bottom: 56px;
         }
       }
     }
   }
 }
 
-@media (max-width: 730px) {
+@media (max-width: 780px) {
   .contact-section {
     background-image: linear-gradient(180deg, $accent 60%, rgba(219, 205, 197, 0.6) 50%);
     .contact {

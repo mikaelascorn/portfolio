@@ -54,7 +54,15 @@
 }
 
 @media(max-width: 480px) {
-  .skills-color ul li:hover p {
-    display: none;
+  .skills-color ul {
+    li:hover p {
+      display: none;
+    }
+    li:hover i,
+    li:hover svg {
+      fill: black;
+      color: black;
+      transform: none;
+    }
   }
 }
