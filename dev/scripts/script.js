@@ -6,7 +6,7 @@ $(function () {
 
     $('ul').toggleClass('active', () => {
       if ($(this).is(':hidden')) {
-        $(this).slideDown('slow');
+        $(this).slideDown('fast');
       } else {
         $(this).fadeOut('fast');
       };

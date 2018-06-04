@@ -99,7 +99,23 @@
   .back-to-top {
     text-align: center;
     i {
-      @include fontSize(25);
+      @include fontSize(30);
+    }
+    i:hover {
+      color: $pop;
+      animation: MoveUpDown 1s linear infinite;
+      position: relative;
+      left: 0;
+      bottom: 0;
+      text-align: center;
+    }
+    @keyframes MoveUpDown {
+      50%, 100% {
+        bottom: 0;
+      }
+      50%, 50% {
+        bottom: 15px;
+      }
     }
   }
 }

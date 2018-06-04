@@ -325,7 +325,7 @@ a.skip:hover {
   color: white; }
 
 .header-content {
-  background-image: url(../assets/hero.jpeg);
+  background-image: url(../assets/hero.jpg);
   height: 100vh;
   background-size: cover;
   background-repeat: repeat;
@@ -596,8 +596,28 @@ a.skip:hover {
   .contact-section .back-to-top {
     text-align: center; }
     .contact-section .back-to-top i {
-      font-size: 25px;
-      font-size: 2.5rem; }
+      font-size: 30px;
+      font-size: 3rem; }
+    .contact-section .back-to-top i:hover {
+      color: #60E0B7;
+      -webkit-animation: MoveUpDown 1s linear infinite;
+              animation: MoveUpDown 1s linear infinite;
+      position: relative;
+      left: 0;
+      bottom: 0;
+      text-align: center; }
+
+@-webkit-keyframes MoveUpDown {
+  50%, 100% {
+    bottom: 0; }
+  50%, 50% {
+    bottom: 15px; } }
+
+@keyframes MoveUpDown {
+  50%, 100% {
+    bottom: 0; }
+  50%, 50% {
+    bottom: 15px; } }
 
 @media (max-width: 880px) {
   .contact-section .contact form {

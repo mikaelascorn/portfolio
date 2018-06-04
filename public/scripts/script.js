@@ -9,7 +9,7 @@ $(function () {
 
     $('ul').toggleClass('active', function () {
       if ($(_this).is(':hidden')) {
-        $(_this).slideDown('slow');
+        $(_this).slideDown('fast');
       } else {
         $(_this).fadeOut('fast');
       };
