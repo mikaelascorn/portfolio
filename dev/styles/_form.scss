@@ -23,14 +23,14 @@
         max-width: 400px;
         &::placeholder {
           color: $fontGrey;
-          @include fontSize(12);
+          @include fontSize(13);
         }
       }
       textarea {
         max-width: 100%;
         &::placeholder {
           color: $fontGrey;
-          @include fontSize(12);
+          @include fontSize(13);
         }
       }
       textarea:hover,
@@ -47,22 +47,24 @@
         button {
           border: 1px solid transparent;
           background-color: $accent;
-          margin-bottom: 75px;
+          margin: 0px 0px 75px 10px;
           text-transform: uppercase;
           transition: all 0.5s;
+          padding: 0px;
+          & {
+            border-top: 3px double $pink;
+            padding-top: 10px;
+            transition: all 0.5s;
+          }
+          & {
+            border-bottom: 3px double $pink;
+            padding-bottom: 10px;
+            transition: all 0.5s;
+          }
           &::before,
           &::after {
             content: "";
             display: block;
-            padding: 10px;
-          }
-          &::before {
-            border-top: 3px double $pink;
-            transition: all 0.5s;
-          }
-          &::after {
-            border-bottom: 3px double $pink;
-            transition: all 0.5s;
           }
         }
         button:hover {
@@ -80,8 +82,11 @@
       p a {
         text-transform: none;
       }
+      p {
+        margin-top: 3px;
+      }
       .social-space {
-        padding-bottom: 15px;
+        padding-bottom: 6px;
       }
       a {
         padding-right: 15px;

@@ -75,6 +75,7 @@ a.skip:hover {
       position: fixed;
       z-index: -10;
       top: 85px;
+
     }
   }
 }
@@ -94,14 +95,33 @@ a.skip:hover {
         text-align: center;
         background-color: rgba(0,0,0, 0.8);
         transition: all 3ms ease-in-out;
-        transition-property: all;
-        transition-duration: .5s;
-        transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
       }
     }
     .main-navigation {
       li {
         padding: 44px 100px;
+        animation: Open 500ms ease-in-out;
+        @for $i from 1 through 4 {
+          &:nth-child(#{$i}) {
+            animation-name: Open;
+            animation-duration: 200ms * $i;
+            animation-timing-function: ease-in-out; 
+          }
+        }
+      }
+      @keyframes Open {
+        0% {
+          opacity: 0;
+          transform: scale(0.3) translateY(-60px)
+        }
+        30% {
+          opacity: 30;
+          transform: scale(0.5) translateY(60px)
+        }
+        100% {
+          opacity: 100;
+          transform: scale(1) translateY(0px)
+        }
       }
       .toggle {
         display: block;

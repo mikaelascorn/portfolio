@@ -196,6 +196,8 @@ body {
     padding-bottom: 10px;
     position: relative;
     left: -3%; }
+  body .special-line:before {
+    border-top: 3px double #f7f7f7; }
   body h4 {
     color: #333333;
     font-family: 'Merriweather', serif;
@@ -203,8 +205,8 @@ body {
     letter-spacing: 0.1rem;
     font-size: 16px;
     font-size: 1.6rem;
-    margin: 0px;
-    margin-top: 90px; }
+    margin: 50px 0px 0px 0px;
+    padding-top: 20px; }
   body h5 {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.1rem;
@@ -216,12 +218,12 @@ body {
     font-family: 'Merriweather', serif;
     font-size: 25px;
     font-size: 2.5rem;
-    margin: 80px auto 30px auto;
+    margin: 55px auto 0px auto;
     max-width: 80%; }
   body .separator:before {
     border-top: 3px double #dbcdc5;
     width: 200px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
     height: 3px;
     content: "";
     display: block;
@@ -229,6 +231,7 @@ body {
     left: calc(50% - 100px); }
   body p,
   body a,
+  body button,
   body .fa {
     font-family: 'Merriweather', serif;
     font-size: 16px;
@@ -238,7 +241,8 @@ body {
     text-decoration: none;
     text-transform: uppercase; }
   body main p,
-  body main a {
+  body main a,
+  body main button {
     color: #777777; }
   body footer p,
   body footer a {
@@ -267,7 +271,7 @@ body {
     font-size: 50px;
     font-size: 5rem; }
   body h4 {
-    margin-top: 55px; }
+    margin-top: 25px; }
   body h6 {
     max-width: 100%;
     text-align: left;
@@ -396,15 +400,65 @@ a.skip:hover {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.8);
     -webkit-transition: all 3ms ease-in-out;
-    transition: all 3ms ease-in-out;
-    -webkit-transition-property: all;
-    transition-property: all;
-    -webkit-transition-duration: .5s;
-            transition-duration: .5s;
-    -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-            transition-timing-function: cubic-bezier(0, 1, 0.5, 1); }
+    transition: all 3ms ease-in-out; }
   .header-content .main-navigation li {
-    padding: 44px 100px; }
+    padding: 44px 100px;
+    -webkit-animation: Open 500ms ease-in-out;
+            animation: Open 500ms ease-in-out; }
+    .header-content .main-navigation li:nth-child(1) {
+      -webkit-animation-name: Open;
+              animation-name: Open;
+      -webkit-animation-duration: 200ms;
+              animation-duration: 200ms;
+      -webkit-animation-timing-function: ease-in-out;
+              animation-timing-function: ease-in-out; }
+    .header-content .main-navigation li:nth-child(2) {
+      -webkit-animation-name: Open;
+              animation-name: Open;
+      -webkit-animation-duration: 400ms;
+              animation-duration: 400ms;
+      -webkit-animation-timing-function: ease-in-out;
+              animation-timing-function: ease-in-out; }
+    .header-content .main-navigation li:nth-child(3) {
+      -webkit-animation-name: Open;
+              animation-name: Open;
+      -webkit-animation-duration: 600ms;
+              animation-duration: 600ms;
+      -webkit-animation-timing-function: ease-in-out;
+              animation-timing-function: ease-in-out; }
+    .header-content .main-navigation li:nth-child(4) {
+      -webkit-animation-name: Open;
+              animation-name: Open;
+      -webkit-animation-duration: 800ms;
+              animation-duration: 800ms;
+      -webkit-animation-timing-function: ease-in-out;
+              animation-timing-function: ease-in-out; }
+  @-webkit-keyframes Open {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(0.3) translateY(-60px);
+              transform: scale(0.3) translateY(-60px); }
+    30% {
+      opacity: 30;
+      -webkit-transform: scale(0.5) translateY(60px);
+              transform: scale(0.5) translateY(60px); }
+    100% {
+      opacity: 100;
+      -webkit-transform: scale(1) translateY(0px);
+              transform: scale(1) translateY(0px); } }
+  @keyframes Open {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(0.3) translateY(-60px);
+              transform: scale(0.3) translateY(-60px); }
+    30% {
+      opacity: 30;
+      -webkit-transform: scale(0.5) translateY(60px);
+              transform: scale(0.5) translateY(60px); }
+    100% {
+      opacity: 100;
+      -webkit-transform: scale(1) translateY(0px);
+              transform: scale(1) translateY(0px); } }
   .header-content .main-navigation .toggle {
     display: block;
     color: #dbcdc5;
@@ -513,38 +567,38 @@ a.skip:hover {
         max-width: 400px; }
         .contact-section .contact form input::-webkit-input-placeholder {
           color: #777777;
-          font-size: 12px;
-          font-size: 1.2rem; }
+          font-size: 13px;
+          font-size: 1.3rem; }
         .contact-section .contact form input:-ms-input-placeholder {
           color: #777777;
-          font-size: 12px;
-          font-size: 1.2rem; }
+          font-size: 13px;
+          font-size: 1.3rem; }
         .contact-section .contact form input::-ms-input-placeholder {
           color: #777777;
-          font-size: 12px;
-          font-size: 1.2rem; }
+          font-size: 13px;
+          font-size: 1.3rem; }
         .contact-section .contact form input::placeholder {
           color: #777777;
-          font-size: 12px;
-          font-size: 1.2rem; }
+          font-size: 13px;
+          font-size: 1.3rem; }
       .contact-section .contact form textarea {
         max-width: 100%; }
         .contact-section .contact form textarea::-webkit-input-placeholder {
           color: #777777;
-          font-size: 12px;
-          font-size: 1.2rem; }
+          font-size: 13px;
+          font-size: 1.3rem; }
         .contact-section .contact form textarea:-ms-input-placeholder {
           color: #777777;
-          font-size: 12px;
-          font-size: 1.2rem; }
+          font-size: 13px;
+          font-size: 1.3rem; }
         .contact-section .contact form textarea::-ms-input-placeholder {
           color: #777777;
-          font-size: 12px;
-          font-size: 1.2rem; }
+          font-size: 13px;
+          font-size: 1.3rem; }
         .contact-section .contact form textarea::placeholder {
           color: #777777;
-          font-size: 12px;
-          font-size: 1.2rem; }
+          font-size: 13px;
+          font-size: 1.3rem; }
       .contact-section .contact form textarea:hover,
       .contact-section .contact form input:hover {
         border: 3px solid #dbcdc5;
@@ -557,22 +611,24 @@ a.skip:hover {
         .contact-section .contact form .form-submit button {
           border: 1px solid transparent;
           background-color: #f7f7f7;
-          margin-bottom: 75px;
+          margin: 0px 0px 75px 10px;
           text-transform: uppercase;
           -webkit-transition: all 0.5s;
-          transition: all 0.5s; }
+          transition: all 0.5s;
+          padding: 0px; }
+          .contact-section .contact form .form-submit button {
+            border-top: 3px double #dbcdc5;
+            padding-top: 10px;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s; }
+          .contact-section .contact form .form-submit button {
+            border-bottom: 3px double #dbcdc5;
+            padding-bottom: 10px;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s; }
           .contact-section .contact form .form-submit button::before, .contact-section .contact form .form-submit button::after {
             content: "";
-            display: block;
-            padding: 10px; }
-          .contact-section .contact form .form-submit button::before {
-            border-top: 3px double #dbcdc5;
-            -webkit-transition: all 0.5s;
-            transition: all 0.5s; }
-          .contact-section .contact form .form-submit button::after {
-            border-bottom: 3px double #dbcdc5;
-            -webkit-transition: all 0.5s;
-            transition: all 0.5s; }
+            display: block; }
         .contact-section .contact form .form-submit button:hover {
           color: #60E0B7;
           -webkit-transform: scale(1.03);
@@ -586,8 +642,10 @@ a.skip:hover {
               flex: 1 1 200px; }
       .contact-section .contact .contact-info p a {
         text-transform: none; }
+      .contact-section .contact .contact-info p {
+        margin-top: 3px; }
       .contact-section .contact .contact-info .social-space {
-        padding-bottom: 15px; }
+        padding-bottom: 6px; }
       .contact-section .contact .contact-info a {
         padding-right: 15px;
         -webkit-transition: all 0.5s;
@@ -745,10 +803,7 @@ footer {
   z-index: 100; }
 
 .skills-color {
-  background-color: #dbcdc5;
-  padding-top: 12px;
-  position: relative;
-  top: -23px; }
+  background-color: #dbcdc5; }
   .skills-color ul {
     margin: 20px 0px 0px;
     display: -webkit-box;

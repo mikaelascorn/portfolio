@@ -80,14 +80,17 @@ body {
     position: relative;
     left: -3%;
   }
+  .special-line:before {
+    border-top: 3px double $accent;
+  }
   h4 {
     color: $fontBlack;
     font-family: 'Merriweather', serif;
     font-style: italic;
     letter-spacing: 0.1rem;
     @include fontSize(16);
-    margin: 0px;
-    margin-top: 90px;
+    margin: 50px 0px 0px 0px;
+    padding-top: 20px;
   }
   h5 {
     font-family: 'Montserrat', sans-serif;
@@ -99,13 +102,13 @@ body {
   h6 {
     font-family: 'Merriweather', serif;
     @include fontSize(25);
-    margin: 80px auto 30px auto;
+    margin: 55px auto 0px auto;
     max-width: 80%;
   }
   .separator:before {
     border-top: 3px double $pink;
     width: 200px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
     height: 3px;
     content: "";
     display: block;
@@ -114,6 +117,7 @@ body {
   }
   p,
   a,
+  button,
   .fa {
     font-family: 'Merriweather', serif;
     @include fontSize(16);
@@ -125,7 +129,8 @@ body {
   }
   main {
     p,
-    a {
+    a,
+    button {
       color: $fontGrey;
     }
   }
@@ -161,7 +166,7 @@ body {
       @include fontSize(50);
     }
     h4 {
-      margin-top: 55px;
+      margin-top: 25px;
     }
     h6 {
       max-width: 100%;
