@@ -74,9 +74,20 @@ a.skip:hover {
       height: 348px;
       position: fixed;
       z-index: -10;
-      top: 85px;
-
+      top: 95px;
     }
+    #M {
+      animation: changeLogoColor 3s 1;
+      transition: all 1s linear; 
+    }
+  }
+}
+@keyframes changeLogoColor {
+  0% {
+    fill: black;
+  }
+  50% {
+    fill: $pink;
   }
 }
 

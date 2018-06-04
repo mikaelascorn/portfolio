@@ -386,7 +386,24 @@ a.skip:hover {
       height: 348px;
       position: fixed;
       z-index: -10;
-      top: 85px; }
+      top: 95px; }
+    .header-content .header-title #M {
+      -webkit-animation: changeLogoColor 3s 1;
+              animation: changeLogoColor 3s 1;
+      -webkit-transition: all 1s linear;
+      transition: all 1s linear; }
+
+@-webkit-keyframes changeLogoColor {
+  0% {
+    fill: black; }
+  50% {
+    fill: #dbcdc5; } }
+
+@keyframes changeLogoColor {
+  0% {
+    fill: black; }
+  50% {
+    fill: #dbcdc5; } }
 
 @media (max-width: 1024px) {
   .header-content .main-links .hamburger {
@@ -643,9 +660,7 @@ a.skip:hover {
       .contact-section .contact .contact-info p a {
         text-transform: none; }
       .contact-section .contact .contact-info p {
-        margin-top: 3px; }
-      .contact-section .contact .contact-info .social-space {
-        padding-bottom: 6px; }
+        margin-top: 1px; }
       .contact-section .contact .contact-info a {
         padding-right: 15px;
         -webkit-transition: all 0.5s;
@@ -693,8 +708,8 @@ a.skip:hover {
 
 @media (max-width: 780px) {
   .contact-section {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #f7f7f7), color-stop(50%, rgba(219, 205, 197, 0.6)));
-    background-image: linear-gradient(180deg, #f7f7f7 60%, rgba(219, 205, 197, 0.6) 50%); }
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(62%, #f7f7f7), color-stop(47%, rgba(219, 205, 197, 0.6)));
+    background-image: linear-gradient(180deg, #f7f7f7 62%, rgba(219, 205, 197, 0.6) 47%); }
     .contact-section .contact {
       display: block; }
       .contact-section .contact .contact-info {
@@ -709,8 +724,8 @@ a.skip:hover {
 
 @media (max-width: 380px) {
   .contact-section {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(65%, #f7f7f7), color-stop(35%, rgba(219, 205, 197, 0.6)));
-    background-image: linear-gradient(180deg, #f7f7f7 65%, rgba(219, 205, 197, 0.6) 35%); } }
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(68%, #f7f7f7), color-stop(32%, rgba(219, 205, 197, 0.6)));
+    background-image: linear-gradient(180deg, #f7f7f7 68%, rgba(219, 205, 197, 0.6) 32%); } }
 
 .about-section {
   max-width: 80%;
