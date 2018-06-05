@@ -3,19 +3,16 @@
   z-index: 100;
 }
 .skills-color {
-    background-color: $pink;
-    h4 {
-      padding-top: 35px;
-    }
+    background-color: rgba(219, 205, 197, 0.6);
     ul {
-      margin: 20px 0px 0px;
+      margin: 45px 0px 0px;
       display: flex;
       justify-content: space-around;
       align-items: center;
       padding: 0px 0px 25px 0px;
       svg {
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
       }
       li {
         list-style-type: none;
@@ -36,7 +33,7 @@
         transition: all 0.5s;    
       }
       i {
-        @include fontSize(40);
+        @include fontSize(60);
       }
       p {
         display: none;
@@ -46,10 +43,25 @@
     }
   }
   .dev-top {
-    padding-top: 40px;
+    padding-top: 45px;
   }
   .dev-bottom {
     padding-bottom: 60px;
+  }
+}
+
+@media(max-width: 768px) {
+  .skills-color {
+    ul {
+      margin: 20px 0px 0px;
+      li i {
+        @include fontSize(40);
+      }
+      svg {
+        width: 40px;
+        height: 40px;
+      }
+    }
   }
 }
 

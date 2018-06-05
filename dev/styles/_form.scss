@@ -40,6 +40,7 @@
         background-color: darken($accent, 5%);
       }
       .form-submit {
+        margin-top: 15px;
         display: block;
         .thanks {
           display: none;
@@ -127,6 +128,12 @@
     .contact {
       form {
         flex: 1 0 300px;
+        input,
+        textarea,
+        .form-submit button {
+          padding-left: 0px;
+          margin-left: 0px;
+        }
         .form-submit button {
           margin-bottom: 56px;
         }
@@ -137,6 +144,10 @@
 
 @media (max-width: 780px) {
   .contact-section {
+    .contact {
+      max-width: 80%;
+      margin: auto;
+    }
     background-image: linear-gradient(180deg, $accent 62%, rgba(219, 205, 197, 0.6) 47%);
     .contact {
       display: block;
@@ -149,7 +160,10 @@
 
 @media (max-width: 550px) {
   .contact-section {
+    background-image: linear-gradient(180deg, #f7f7f7 62%, rgba(219, 205, 197, 0.6) 35%);
     .contact {
+      max-width: 100%;
+      margin: auto;
       form {
         textarea,
         input {
@@ -164,6 +178,18 @@
 
 @media (max-width: 380px) {
   .contact-section {
-    background-image: linear-gradient(180deg, $accent 68%, rgba(219, 205, 197, 0.6) 32%);
+    background-image: linear-gradient(180deg, #f7f7f7 63%, rgba(219, 205, 197, 0.6) 35%);
+  }
+}
+
+@media (max-width: 352px) {
+  .contact-section {
+    background-image: linear-gradient(180deg, $accent 63%, rgba(219, 205, 197, 0.6) 33%);
+  }
+}
+
+@media (max-width: 328px) {
+  .contact-section {
+    background-image: linear-gradient(180deg, $accent 68%, rgba(219, 205, 197, 0.6) 33%);
   }
 }
