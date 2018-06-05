@@ -329,7 +329,7 @@ a.skip:hover {
   color: white; }
 
 .header-content {
-  background-image: url(/assets/hero.jpg);
+  background-image: url(../assets/hero.jpg);
   height: 100vh;
   background-size: cover;
   background-repeat: repeat;
@@ -632,7 +632,8 @@ a.skip:hover {
           text-transform: uppercase;
           -webkit-transition: all 0.5s;
           transition: all 0.5s;
-          padding: 0px; }
+          padding: 0px;
+          line-height: normal; }
           .contact-section .contact form .form-submit button {
             border-top: 3px double #dbcdc5;
             padding-top: 10px;
@@ -734,7 +735,10 @@ a.skip:hover {
       flex-wrap: row wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
   .about-section .about-photo {
     padding-left: 20px; }
   .about-section img {
@@ -819,6 +823,8 @@ footer {
 
 .skills-color {
   background-color: #dbcdc5; }
+  .skills-color h4 {
+    padding-top: 35px; }
   .skills-color ul {
     margin: 20px 0px 0px;
     display: -webkit-box;
@@ -874,6 +880,9 @@ footer {
     color: black;
     -webkit-transform: none;
             transform: none; } }
+
+.project-wrapper h6 {
+  padding-bottom: 15px; }
 
 .project {
   display: -webkit-box;

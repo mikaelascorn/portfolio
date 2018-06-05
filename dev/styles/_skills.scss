@@ -4,7 +4,9 @@
 }
 .skills-color {
     background-color: $pink;
-
+    h4 {
+      padding-top: 35px;
+    }
     ul {
       margin: 20px 0px 0px;
       display: flex;
