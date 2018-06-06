@@ -68,14 +68,13 @@ a.skip:hover {
     top: 45%;
     transform: translate(-50%, -50%);
     width: 90%;
-    background-attachment: fixed;
     svg {
       left: 33px;
       width: 347px;
       height: 348px;
       position: absolute;
       z-index: -10;
-      top: 100px;
+      top: 98px;
     }
     #M {
       animation: changeLogoColor 3s 1;
