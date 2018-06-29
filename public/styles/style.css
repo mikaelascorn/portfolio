@@ -207,7 +207,7 @@ body {
     font-size: 1.6rem;
     margin: 50px 0px 0px 0px;
     padding-top: 20px; }
-  body .skills-color h4 h4 {
+  body .skills-color h4 {
     padding-top: 40px; }
   body h5 {
     font-family: 'Montserrat', sans-serif;
@@ -279,13 +279,10 @@ body {
     letter-spacing: 0rem;
     font-size: 50px;
     font-size: 5rem; }
-  body h4 {
-    margin-top: 25px; }
-  body h6 {
+  body .project-wrapper h6 {
     max-width: 100%;
     text-align: left;
-    margin-top: 40px;
-    margin-bottom: 0px; }
+    margin: 35px 0px 0px; }
   body .separator:before {
     padding-bottom: 30px; } }
 
@@ -325,7 +322,8 @@ body {
   height: 1px;
   width: 1px;
   text-align: left;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 10000; }
 
 a.skip:active,
 a.skip:focus,
@@ -564,6 +562,8 @@ a.skip:hover {
   margin: 0 auto;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #f7f7f7), color-stop(50%, rgba(219, 205, 197, 0.6)));
   background-image: linear-gradient(90deg, #f7f7f7 50%, rgba(219, 205, 197, 0.6) 50%); }
+  .contact-section h4 {
+    margin: 100px 0px 0px 0px; }
   .contact-section .contact {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -739,6 +739,8 @@ a.skip:hover {
   .contact-section {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(62%, #f7f7f7), color-stop(35%, rgba(219, 205, 197, 0.6)));
     background-image: linear-gradient(180deg, #f7f7f7 62%, rgba(219, 205, 197, 0.6) 35%); }
+    .contact-section h4 {
+      margin: 50px 0px 0px 0px; }
     .contact-section .contact {
       max-width: 100%;
       margin: auto; }
@@ -858,6 +860,8 @@ footer {
 
 .skills-color {
   background-color: rgba(219, 205, 197, 0.6); }
+  .skills-color h4 {
+    padding-top: 45px; }
   .skills-color ul {
     margin: 45px 0px 0px;
     display: -webkit-box;
@@ -899,10 +903,12 @@ footer {
         display: none;
         margin: 0px;
         padding-top: 5px; }
+      .skills-color ul li .pair {
+        line-height: 1.8rem; }
   .skills-color .dev-top {
     padding-top: 30px; }
   .skills-color .dev-bottom {
-    padding-bottom: 60px; }
+    padding-bottom: 70px; }
 
 @media (max-width: 768px) {
   .skills-color ul {
@@ -1025,5 +1031,8 @@ footer {
 
 @media (max-width: 350px) {
   .project .project-bio .project-links {
-    display: block;
-    padding-top: 15px; } }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }

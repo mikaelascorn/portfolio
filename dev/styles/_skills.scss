@@ -4,6 +4,9 @@
 }
 .skills-color {
     background-color: rgba(219, 205, 197, 0.6);
+    h4 {
+      padding-top: 45px;
+    }
     ul {
       margin: 45px 0px 0px;
       display: flex;
@@ -40,13 +43,16 @@
         margin: 0px;
         padding-top: 5px;
       }
+      .pair {
+        line-height: 1.8rem;
+      }
     }
   }
   .dev-top {
     padding-top: 30px;
   }
   .dev-bottom {
-    padding-bottom: 60px;
+    padding-bottom: 70px;
   }
 }
 

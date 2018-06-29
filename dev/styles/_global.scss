@@ -92,10 +92,10 @@ body {
     margin: 50px 0px 0px 0px;
     padding-top: 20px;
   }
-  .skills-color h4 {
-     h4 {
-      padding-top: 40px;
-    }
+  .skills-color h4{
+    //  h4 {
+    padding-top: 40px;
+    // }
   }
   h5 {
     font-family: 'Montserrat', sans-serif;
@@ -180,14 +180,10 @@ body {
       letter-spacing: 0rem;
       @include fontSize(50);
     }
-    h4 {
-      margin-top: 25px;
-    }
-    h6 {
+    .project-wrapper h6 {
       max-width: 100%;
       text-align: left;
-      margin-top: 40px;
-      margin-bottom: 0px;
+      margin: 35px 0px 0px;
     }
      .separator:before {
        padding-bottom: 30px;

@@ -106,8 +106,8 @@
   .project {
     .project-bio {
       .project-links {
-        display: block;
-        padding-top: 15px;
+        display: flex;
+        justify-content: space-around;
       }
     }
   }
